@@ -19,35 +19,35 @@
 <https://newsvocab.fr/onto/nvc#> a owl:Ontology ;
     dcterms:title "News" .
 
-msv:news a rdfs:Class ;
+nvc:news a rdfs:Class ;
     rdfs:label "news" ;
     rdfs:domain o:Resource ;
     owl:sameAs swpo:NewsItem;
     vs:term_status "experimental" .    
 
-msv:type a rdf:Property ;
+nvc:type a rdf:Property ;
     rdfs:label "type" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-msv:title a rdf:Property ;
+nvc:title a rdf:Property ;
     rdfs:label "title" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-msv:date a rdf:Property ;
+nvc:date a rdf:Property ;
     rdfs:label "date" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 
-msv:author a rdfs:Class ;
+nvc:author a rdfs:Class ;
     rdfs:label "author" ;
     rdfs:domain o:Resource ;
     owl:sameAs nlon:Author;
     vs:term_status "experimental" .    
 
-msv:name a rdf:Property ;
+nvc:name a rdf:Property ;
     rdfs:label "name" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
