@@ -10,6 +10,13 @@
     <title>Items</title>
 </head>
 <body>
+
+<div class="container">
+
+    <div class="items">
+
+    </div>
+</div>    
     
 <script>
 
@@ -18,8 +25,15 @@ getData(url)
 
 function getData(url){
     d3.json(url, function(data){
-        console.log(data)
+        // console.log(data)
+        showItems(data)
     })
+}
+
+function showItems(data){
+    for(d in data){
+        console.log(d['@id'])
+    }
 }
 </script>    
 </body>
