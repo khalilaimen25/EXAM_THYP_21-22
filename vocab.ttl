@@ -1,0 +1,53 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix mo: <http://purl.org/ontology/mo#>.
+@prefix bbc: <http://www.bbc.co.uk/ontologies/bbc/Product> .
+@prefix mexalgo: <http://mex.aksw.org/mex-algo#CART> .
+@prefix wlo: <http://purl.org/ontology/wo/Order> .
+@prefix vivo: <http://vivoweb.org/ontology/core#Review> .
+@prefix tsioc: <http://rdfs.org/sioc/types#WishList> .
+@prefix swpo: <http://sw-portal.deri.org/ontologies/swportal#NewsItem> .
+@prefix nlon: <http://lod.nl.go.kr/ontology/Author>.
+@prefix nvc: <https://newsvocab.fr/onto/nvc#> .
+
+
+<https://newsvocab.fr/onto/nvc#> a owl:Ontology ;
+    dcterms:title "News" .
+
+msv:news a rdfs:Class ;
+    rdfs:label "news" ;
+    rdfs:domain o:Resource ;
+    owl:sameAs swpo:NewsItem;
+    vs:term_status "experimental" .    
+
+msv:type a rdf:Property ;
+    rdfs:label "type" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+msv:title a rdf:Property ;
+    rdfs:label "title" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+msv:date a rdf:Property ;
+    rdfs:label "date" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+msv:author a rdfs:Class ;
+    rdfs:label "author" ;
+    rdfs:domain o:Resource ;
+    owl:sameAs nlon:Author;
+    vs:term_status "experimental" .    
+
+msv:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
